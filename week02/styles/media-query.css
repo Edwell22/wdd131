@@ -1,0 +1,27 @@
+/* Set the default font for the entire page */
+body{
+    font-family: 'Roboto';
+}
+
+/* Style the main structural elements */
+header, main, section, footer{
+    max-width: 640px;                  /* Limit the width of the content */
+    margin: 1rem auto;                 /* Center horizontally with vertical spacing */
+    border: 2px solid rgb(39, 47, 108); /* Add a blue border */
+    padding: 10px;                     /* Inner spacing */
+    background-color: #c09da5;         /* Light pink background */
+}
+
+/* Layout for the main content area */
+main{
+    display: grid;                     /* Enable CSS Grid */
+    grid-template-columns: 1fr;        /* Single-column layout */
+    grid-gap: 10px;                    /* Space between grid items */
+}
+
+/* Style for each section */
+section{
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);         /* Standard box shadow */
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75); /* Shadow for WebKit browsers */
+    -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);    /* Shadow for Mozilla browsers */
+}
