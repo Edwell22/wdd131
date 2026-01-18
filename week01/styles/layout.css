@@ -1,0 +1,78 @@
+/* Reset default margin for all elements */
+* {
+   margin: 0; 
+}
+
+/* Style for the main heading */
+h1 {
+    background-color: #146c8f; /* Blue background */
+    color: white;              /* White text */
+    font-size: 25px;           /* Font size */
+    height: 200px;             /* Fixed height */
+}
+
+/* Apply padding to multiple layout elements */
+h1, main, aside, footer {
+    padding: 20px 0px 0px 20px; /* Top and left padding */
+}
+
+/* Navigation list styling */
+ul {
+    background-color: rgb(64, 84, 110); /* Dark blue background */
+    list-style: none;                   /* Remove bullet points */
+    display: flex;                      /* Use flexbox layout */
+    justify-content: space-evenly;      /* Even spacing between items */
+    padding: 20px 0px 20px 0px;          /* Vertical padding */
+    height: 40px;                       /* Fixed height */
+}
+
+/* List item styling */
+li {
+    background-color: rgb(64, 84, 110); /* Match ul background */
+    list-style-position: inside;        /* Position list marker (not visible due to none) */
+}
+
+/* Anchor (link) styling inside list items */
+li a {
+    color: white;            /* White text */
+    text-decoration: none;   /* Remove underline */
+    font-size: 20px;         /* Font size */
+}
+
+/* Grid layout for the page */
+body {
+    display: grid;                           /* Enable CSS Grid */
+    grid-template-columns: 70% 30%;          /* Two columns layout */
+    grid-template-rows: 300px 500px 300px;   /* Three rows layout */
+    font-size: 25px;                         /* Base font size */
+}
+
+/* Header spans across both columns */
+header {
+    grid-column: 1 / 3; /* From column 1 to 2 */
+    grid-row: 1 / 2;    /* First row */
+}
+
+/* Main content area */
+main {
+    background-color: rgb(184, 243, 207); /* Light green background */
+    color: black;                         /* Black text */
+    grid-column: 1 / 2;                   /* Left column */
+    grid-row: 2 / 3;                      /* Middle row */
+}
+
+/* Sidebar content */
+aside {
+    background-color: white; /* White background */
+    color: black;            /* Black text */
+    grid-column: 2 / 3;      /* Right column */
+    grid-row: 2 / 3;         /* Middle row */
+}
+
+/* Footer section */
+footer {
+    background-color: #146c8f; /* Blue background */
+    color: white;              /* White text */
+    grid-column: 1 / 3;        /* Span both columns */
+    grid-row: 3 / 4;           /* Bottom row */
+}
