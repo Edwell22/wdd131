@@ -1,86 +1,108 @@
+/* Import Fjalla One font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+/* Import Fjalla One and Inconsolata fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&display=swap');
 
+/* Base styling for the entire page */
 body{
-    margin: 0;
-	font-family: "Inconsolata", monospace;
+    margin: 0;                                    /* Remove default browser margin */
+	font-family: "Inconsolata", monospace;       /* Set default font */
 }
 
+/* ===============================
+   Small view (mobile) navigation
+   =============================== */
 
-
-/* small view navigation */
+/* Menu button styling */
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	font-size: 1.5rem;    /* Size of the menu icon */
+	border: 0;            /* Remove border */
+	background: none;     /* Remove background */
+	color: #000;          /* Black icon color */
+	position: absolute;   /* Position relative to the viewport */
+	top: 1rem;            /* Distance from top */
+	right: 1rem;          /* Distance from right */
 }
+
+/* Apply Fjalla One font to all headings */
 h1,h2,h3,h4,h5,h6{
-	font-family: "Fjalla One", sans-serif;}
-	h3{
-		text-align: center;
-	}
+	font-family: "Fjalla One", sans-serif;
+}
+
+/* Center align level 3 headings */
+h3{
+	text-align: center;
+}
+
+/* Hamburger icon before the menu button */
 #menu::before {
-	content: "☰";
+	content: "☰";        /* Hamburger icon */
 }
 
+/* Change icon when menu is open */
 #menu.open::before {
-	content: "❎";
+	content: "❎";        /* Close icon */
 }
+
+/* Make images responsive */
 img{
-    max-width: 100%;
+    max-width: 100%;     /* Prevent images from overflowing container */
 }
+
+/* Navigation container styling */
 .navigation {
-	
-
-	display: flex;
-	flex-direction: column
+	display: flex;               /* Enable flexbox */
+	flex-direction: column;      /* Stack links vertically */
 }
+
+/* Align h2 inside flex container to the start */
 h2 {
-    align-self: flex-start; /* Align h2 to the flex-start */
-  }
+    align-self: flex-start;      /* Align h2 to the left */
+}
+
+/* Navigation link styling */
 .navigation a {
-	display: none;
-
-	color:black;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
+	display: none;               /* Hide links by default */
+	color: black;                /* Link text color */
+	text-align: center;          /* Center link text */
+	padding: 1rem;               /* Space around link text */
+	text-decoration: none;       /* Remove underline */
 }
+
+/* Hover effect for navigation links */
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
+	background-color: #bbb;      /* Light gray background */
+	color: #333;                 /* Darker text */
+	font-weight: 700;            /* Bold text */
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
+/* Show navigation links when menu is open */
 .open a {
-	display: block;
+	display: block;              /* Display links vertically */
 }
 
+/* Header styling */
 header {
-    background-color: #59abee;
-	display: grid;
-	grid-gap: 1rem;
-	padding: 20px;
-	border: 1px solid rgba(47, 0, 255, 0.1);
-	box-shadow: 0 0 30px #333;
+    background-color: #59abee;             /* Light blue background */
+	display: grid;                          /* Enable CSS Grid */
+	grid-gap: 1rem;                        /* Space between grid items */
+	padding: 20px;                         /* Inner spacing */
+	border: 1px solid rgba(47, 0, 255, 0.1);/* Subtle border */
+	box-shadow: 0 0 30px #333;              /* Drop shadow effect */
 }
 
+/* Section layout */
 section{ 
-    display: grid;
-    grid-template-columns: 1fr;
+    display: grid;                         /* Enable grid layout */
+    grid-template-columns: 1fr;            /* Single column layout */
 }
 
+/* Footer styling */
 footer{
-
-	text-align: center;
-	height: fit-content;
-    height: 20vh;
-    background-color: #59abee;
-	padding: 5px;
-
-  }
+	text-align: center;     /* Center text */
+	height: fit-content;    /* Height adjusts to content */
+    height: 20vh;           /* Footer takes 20% of viewport height */
+    background-color: #59abee; /* Match header background */
+	padding: 5px;           /* Inner spacing */
+}
