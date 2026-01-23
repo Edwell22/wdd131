@@ -15,6 +15,7 @@
 		flex-direction: row;
        
 
+            
       
 	}
 
@@ -24,10 +25,12 @@
 		flex: 1 1 100%;
        
 	}
-
-    main{
+ 
+    .res-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
     }
+
+	
 
 }

@@ -1,0 +1,55 @@
+@media screen and ( min-width: 650px){
+
+       .move{
+        background-color:  var(--backcolor);
+        color: var(--white);
+        margin-top: 1rem;
+        margin-left: -1rem;
+    
+        padding: 0.8rem 1rem;
+        text-align: left;
+       }
+        .top-left {
+          position: absolute;
+          top: 150px;
+          left: 16px;
+          width: 300px;
+        }
+        .bottom-right {
+          position: absolute;
+          bottom: 8px;
+          right: 16px;
+          width: 300px;
+        }
+hr{
+  display: none;
+}
+  .data, .weather      {
+          background-color: rgba(252, 245, 235, .8);
+          color: var(--black);
+          -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+          -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+          box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+          padding: 10px;
+          
+        
+        }
+        .move2 h2::after {
+          content: " ⛅";
+        }
+     
+        h2{
+          text-align: left;
+        
+        }
+        figure{
+          display: none;
+    
+        }
+
+        img, .container{
+          height:500px;
+          
+          width: 100%;
+        }
+   }

@@ -1,0 +1,63 @@
+:root {
+  --header: #E4C59E;
+  --white: #ffffff;
+  --black: #000;
+  --green: green;
+  --backcolor: #080d10;
+}
+
+
+body{
+  margin: 0;
+}
+
+
+header{
+  background-color: var(--header) ;
+  text-align: center;
+
+}
+.container {
+    position: relative;
+    text-align: center;
+    
+ 
+   
+  }
+
+ 
+
+  main{
+    display: grid;
+    grid-template: 1fr;
+    margin: 0 10px;
+    
+ 
+  }
+
+h2{
+  text-align: center;
+
+}
+
+  .weather, data{
+    margin: 0 10px;
+   
+  }
+  hr{
+    background-color: var(--black);
+    color:var(--black);
+  }
+  .back{
+    background-color: var(--green);
+    height: 10px;
+  }
+  .back2{
+    background-color: var(--backcolor);
+    height: 10px;
+  }
+
+  .move2{
+    text-align: center;
+  }
+
