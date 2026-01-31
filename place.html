@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>WDD 131 - Dynamic Web Fundamentals - Edwell Kakunguwo</title> 
+    <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals - Edwell Kakunguwo"> 
+    <meta name="author" content="Edwell Kakunguwo"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400"> 
+    <link rel="stylesheet" href="./styles/place.css">
+    <link rel="stylesheet" href="./styles/place-large.css">
+    <link rel="stylesheet" href="./styles/temples.css">
+</head>
+<body>
+<header>
+    <h1>Zimbabwe</h1>
+</header>
+<div class="back"></div>
+      
+ 
+    <div class="container">
+        <picture>
+        <source srcset="images/animal.webp" media="(min-width: 1000px)">
+        <source srcset="images/victoria-falls-5948336_1920.webp" media="(min-width: 500px)">
+        <img src="images/city-568208.webp" alt="Zimbabwe image" class="hero-image" >
+      </picture>
+    </div>
+    <div class="back2"></div>
+    <main>
+        <div class="data  top-left">
+            <div class="move">
+            <h2>Data</h2>
+            </div>
+          <div>
+     
+            <table>
+                <tr>
+                    <td><strong>Area:</strong></td>
+                    <td>390,757 square kilometers.</td>
+                </tr>
+                <tr>
+                    <td><strong>Population:</strong></td>
+                    <td>14.8 million people.</td>
+                </tr>
+                <tr>
+                    <td><strong>Capital:</strong></td>
+                    <td>Harare.</td>
+                </tr>
+                <tr>
+                    <td><strong>Language:</strong></td>
+                    <td>English, Shona, and Sindebele (also known as Ndebele).</td>
+                </tr>
+                <tr>
+                    <td><strong>Currency:</strong></td>
+                    <td>Zimbabwe Gold (ZIG) and US dollar.</td>
+                </tr>
+                <tr>
+                    <td><strong>Time Zone:</strong></td>
+                    <td>Central Africa Time (CAT)</td>
+                </tr>
+                <tr>
+                    <td><strong>Calling Code:</strong></td>
+                    <td>+263</td>
+                </tr>
+                <tr>
+                    <td><strong>Internet TLD:</strong></td>
+                    <td>.zw</td>
+                </tr>
+            </table>
+           
+    
+            <hr>
+          </div>
+            
+        </div>
+   
+        <div class="weather  bottom-right">
+            <div class="move move2">
+            <h2>Weather</h2>
+            <figure>
+                <img src="images/weather-icon.svg" alt="weather icon" class="weather-icon" width="100" height="100">
+              </figure>
+          
+        </div>
+       
+       
+            <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+            <p><strong>Condition:</strong> <span id="condition"></span></p>
+            <p><strong>Wind Speed:</strong> <span id="wind-speed"></span></p>
+            <p><strong>Wind chill:</strong> <span id="wind-chill"></span></p>
+        </div>
+    </main>
+<footer> 
+
+<p id="currentyear"></p>
+        <p id="lastModified"></p>
+
+</footer>
+</body>
+    <script src="./scripts/place.js"></script>
+    <script src="./scripts/getdates.js"></script>
+    
+</body>
+</html>

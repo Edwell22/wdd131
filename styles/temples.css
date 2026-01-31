@@ -84,7 +84,7 @@ h2 {
 
 /* Header styling */
 header {
-    background-color: #59abee;             /* Light blue background */
+    background-color:brown;             /* Light blue background */
 	display: grid;                          /* Enable CSS Grid */
 	grid-gap: 1rem;                        /* Space between grid items */
 	padding: 20px;                         /* Inner spacing */
@@ -103,6 +103,6 @@ footer{
 	text-align: center;     /* Center text */
 	height: fit-content;    /* Height adjusts to content */
     height: 20vh;           /* Footer takes 20% of viewport height */
-    background-color: #59abee; /* Match header background */
+    background-color:brown;             /* Light blue background */
 	padding: 5px;           /* Inner spacing */
 }
