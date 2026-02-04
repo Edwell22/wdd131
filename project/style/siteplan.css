@@ -1,0 +1,45 @@
+/* Importing Google Fonts: Fjalla One, Inconsolata, and Poetsen One */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&family=Poetsen+One&display=swap');
+
+/* Styling for elements with class "col" */
+.col {
+    background-color: #E7E154; /* Light yellow background */
+}
+
+/* Styling for elements with class "col2" */
+.col2 {
+    background-color: #060607; /* Almost black background */
+    color: #E7E154; /* Text color matching .col background */
+}
+
+/* Styling headings (h1, h2, h3, h4) */
+h1, h2, h3, h4 {
+    font-family: "Poetsen One", sans-serif; /* Decorative font for headings */
+    font-weight: 400; /* Normal weight */
+    font-style: normal; /* No italic */
+}
+
+/* Styling for the body text */
+body {
+    font-family: "Inconsolata", monospace; /* Monospace font for body content */
+}
+
+/* Center-align h1 headings */
+h1 {
+    text-align: center;
+}
+
+/* Add horizontal margins to the main content */
+main {
+    margin: 0 90px; /* Top/bottom 0, left/right 90px */
+}
+
+/* Create a flex container for elements with class "grid" */
+.grid {
+    display: flex; /* Arrange children in a row */
+}
+
+/* Set full width for both grid containers and images */
+.grid, img {
+    width: 100%; /* Elements take up full available width */
+}
