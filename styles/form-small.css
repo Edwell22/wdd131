@@ -1,0 +1,194 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&display=swap');
+
+
+/* ===== Base Styles ===== */
+
+body {
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+}
+
+header {
+    text-align: center;
+    height: 20vh;
+    background-color: #2b6777;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+h2 {
+font-size: 30px;
+
+} 
+main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #2b6777;
+    padding: 10px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+/* Last modified date text */
+#lastModified {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* ===== Form Styles ===== */
+
+.form-container {
+    background-color: #c8d8e4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-container select,
+.form-container input[type="date"],
+.form-container textarea,
+.form-container input[type="text"],
+.form-container input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container textarea {
+    height: auto;
+    padding: 8px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #2b6777;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #1f4f5c;
+}
+
+
+/* ===== Checkbox & Radio Styles ===== */
+
+.checkbox-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.form-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-container .checkbox-group span {
+    margin-left: 5px;
+    color: #333;
+}
+
+
+/* ===== Star Rating ===== */
+
+.stars {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ffcc00;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* ===== Responsive Design ===== */
+
+/* SMALL SCREENS (Phones) */
+@media screen and (max-width: 600px) {
+
+    header {
+        height: auto;
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    main {
+        padding: 20px 10px;
+        align-items: flex-start;
+    }
+
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-container input[type="submit"] {
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
+
+
+/* MEDIUM SCREENS (Tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .form-container {
+        max-width: 500px;
+    }
+
+    header {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* LARGE SCREENS (Desktops & TVs) */
+@media screen and (min-width: 1025px) {
+
+    .form-container {
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    header {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+    }
+}
