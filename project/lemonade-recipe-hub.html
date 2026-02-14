@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>WDD 131 - Dynamic Web Fundamentals - Edwell Kakunguwo</title> 
@@ -9,86 +10,117 @@
     <title>Lemonade Recipe Hub</title>
     <link rel="stylesheet" href="./style/lemonade-small.css">
     <link rel="stylesheet" href="./style/lemonade-large.css">
-
 </head>
+
 <body>
 
+    <!-- Banner section containing navigation menu -->
     <div class="banner">
       <div class="bac">
 
+        <!-- Hamburger menu button for mobile navigation -->
         <button id="menu"></button>
       </div>
+
+        <!-- Header section -->
         <header>
             <br><br><br>
+
+        <!-- Navigation links -->
         <nav class="navigation" >
-            
           
-        
-         
+          <!-- Home page link -->
           <a href="./lemonade-recipe-hub.html" title="Home">Home</a>
+
+          <!-- Gallery page link -->
           <a href="./gallery.html" title="gallery" class="active">Gallery </a>
+
+          <!-- About us page link -->
           <a href="./about-us.html" title="about us">About us</a>
     
         </nav>
         
         </header>
+
+    <!-- Container for banner text -->
     <div class="container">
     
-    
-  
+        <!-- Empty centered div (can be used for future content like logo/text) -->
         <div class="centered">
-       
-        </div>
-        <div class="centered2"><h2>Discover the best lemonade recipes here</h2>
-         <p>From classic to creative twists, find your perfect refreshing drink for any occasion. Let's mix up some sunshine!</p>
         </div>
 
-       
+        <!-- Centered heading and paragraph inside banner -->
+        <div class="centered2">
+          <h2>Discover the best lemonade recipes here</h2>
+          <p>From classic to creative twists, find your perfect refreshing drink for any occasion. Let's mix up some sunshine!</p>
+        </div>
+
       </div>
-
-
     </div>
-      <main>
+
+    <!-- Main content section -->
+    <main>
+
+        <!-- Recipes heading -->
         <h2 style="text-align: center;">Recipes</h2>
+
+        <!-- Main content wrapper -->
         <div class="mcontent">
 
-
+            <!-- Container where recipe content will be dynamically added using JavaScript -->
             <div id="recipes-container"></div>
 
         </div>
 
+        <!-- Scenario selection section -->
         <div class="middle">
 
-        <label for="scenarioSelect"><h2>Select a Scenario:</h2></label>
+        <!-- Label for scenario dropdown -->
+        <label for="scenarioSelect">
+          <h2>Select a Scenario:</h2>
+        </label>
+
+        <!-- Dropdown for selecting different lemonade scenarios -->
         <select class="sel" id="scenarioSelect" onchange="selectScenario()">
+
+            <!-- Disabled default option -->
             <option value="" disabled>Select a Scenario</option>
+
+            <!-- Scenario options -->
             <option value="recipe">What is the best lemonade recipe for a summer party?</option>
             <option value="flavors">Where can I find unique lemonade flavors?</option>
             <option value="vegan-sugar-free">Where can I find vegan or sugar-free lemonade recipes?</option>
             <option value="large-crowd">How do I make lemonade for a large crowd?</option>
+
         </select>
     </div>
+
     </div>
     
+    <!-- Scenario content dynamically loaded here -->
     <div id="scenarioContent" class="styleit">
-  
     </div>
 
       </main>
+
  <br><br><br>
+
+  <!-- Footer section -->
   <footer>
- 
-   
+
+    <!-- Footer logo/image -->
     <img src="./img/new.svg" alt="" width="100" height="100">
+
     <div class="footer">
 
+        <!-- Contact information -->
         <ul>
             <li>Phone number: +263 718 666 296</li>
             <li>Email: lemonade@gmail.com</li>
             <li> Address: 16139 42 Close ,Sunningdale 2 ,Harare</li>
         </ul>
 
-        
+     <!-- Subscription form -->
      <form action="">
         <label for="email">Subscribe to our latest updates</label> <br> <br>
         <input type="email"  placeholder="enter email" required>
@@ -96,8 +128,17 @@
      </form>
        
     </div>
-    <div class="center"><p>Copyright &copy; 2024 lemonade hub</p> </div>
+
+    <!-- Copyright information -->
+    <div class="center">
+      <p>Copyright &copy; 2024 lemonade hub</p> 
+    </div>
+
   </footer>
-     <script src="./js/lemonade.js"></script>
+
+  <!-- External JavaScript file for dynamic functionality -->
+  <script src="./js/lemonade.js"></script>
+
 </body>
 </html>
+
