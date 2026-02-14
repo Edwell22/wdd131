@@ -101,18 +101,3 @@ const recipesContainer = document.getElementById('recipes-container');
 
             recipesContainer.appendChild(recipeElement);
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
